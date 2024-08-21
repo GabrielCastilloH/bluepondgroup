@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Pond Group - Under Construction</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background: #071952; /* Deep blue background */
-            color: #EBF4F6; /* Light color for text */
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to bottom, #0A2342, #0E3D66); /* Gradient background */
+            color: #F2F2F2; /* Soft white color for text */
             text-align: center;
             overflow: hidden;
         }
-
         .container {
             position: relative;
             height: 100vh;
@@ -24,26 +22,25 @@
             justify-content: center;
             align-items: center;
         }
-
         .content {
             position: relative;
             z-index: 1;
+            max-width: 80%;
         }
-
         h1 {
-            font-size: 3em;
+            font-size: 4em;
             margin: 0;
             padding: 0.5em;
-            color: #37B7C3; /* Light teal color for the header */
+            color: #67B0C4; /* Light blue color for the header */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-
         .message {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin: 0;
             padding: 0 1em;
-            color: #088395; /* Medium teal color for the message */
+            color: #A6C6D3; /* Soft blue color for the message */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
-
         .fish-container {
             position: absolute;
             width: 100%;
@@ -52,50 +49,43 @@
             left: 0;
             pointer-events: none;
         }
-
         .fish {
             position: absolute;
             background-size: cover;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
         }
-
         .fish1 {
             background-image: url('/images/fish.png');
-            animation: swim1 10s infinite;
-            top: 20%;
-            left: 10%;
+            animation: swim1 12s infinite;
+            top: 15%;
+            left: 5%;
         }
-
         .fish2 {
             background-image: url('/images/fish.png');
-            animation: swim2 15s infinite;
-            top: 50%;
-            left: 50%;
+            animation: swim2 17s infinite;
+            top: 45%;
+            left: 55%;
         }
-
         .fish3 {
             background-image: url('/images/fish.png');
-            animation: swim3 20s infinite;
-            top: 70%;
-            left: 80%;
+            animation: swim3 22s infinite;
+            top: 75%;
+            left: 85%;
         }
-
         @keyframes swim1 {
             0% { transform: translateX(0); }
-            50% { transform: translateX(200px); }
+            50% { transform: translateX(300px); }
             100% { transform: translateX(0); }
         }
-
         @keyframes swim2 {
             0% { transform: translateX(0); }
-            50% { transform: translateX(-200px); }
+            50% { transform: translateX(-300px); }
             100% { transform: translateX(0); }
         }
-
         @keyframes swim3 {
             0% { transform: translateX(0); }
-            50% { transform: translateX(300px); }
+            50% { transform: translateX(400px); }
             100% { transform: translateX(0); }
         }
     </style>
